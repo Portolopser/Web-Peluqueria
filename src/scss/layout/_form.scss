@@ -1,0 +1,41 @@
+.form {
+    width: 100%;
+
+    .field {
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        label {
+            color: $white;
+            font-size: 2rem;
+            //Con esta línea hacemos que los labels tengan todos el mismo tamaño para que se alineen bien
+            flex: 0 0 10rem;
+        }
+
+        input {
+            flex: 1; // Mismo resultado que con width: 100%;
+            padding: $space / 3;
+            border-radius: 1rem;
+
+        }
+    }
+}
+
+.alert {
+
+    color: $white;
+    padding: $space / 2;
+    text-align: center;
+    width: 100%;
+    display: block;
+
+    &.error {
+        background-color: rgb(194,0,0);
+    }
+
+    &.success {
+        background-color: green;
+    }
+}

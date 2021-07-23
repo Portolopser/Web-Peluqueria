@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Hair Salon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+
+    <div class="contenedor-estetica">
+        <div class="imagen"></div>
+        <div class="app">
+            <header class="header">
+                <h1>App Hair Salon</h1>
+            </header>
+            <nav class="tabs">
+                <button type="button" data-step="1">Services</button>
+                <button type="button" data-step="2">Customer Info</button>
+                <button type="button" data-step="3">Summary</button>
+            </nav>
+
+            <!-- Inicia el contenido de la web app-->
+            <div id="step-1" class="section">
+                <h2>Services</h2>
+                <p class="txc">Choose your service</p>
+                <div id="services" class="services-list"></div>
+            </div>
+            <div id="step-2" class="section">
+                <h2>Your Data and Appointments</h2>
+                <p class="txc">Write your appointment and personal data</p>
+
+                <form action="" class="form">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" value="">
+                    </div>
+                    <div class="field">
+                        <label for="date">Date</label>
+                        <input type="date" id="date">
+                    </div>
+                    <div class="field">
+                        <label for="time">Time</label>
+                        <input type="time" id="time">
+                    </div>
+                </form>
+
+            </div>
+            <div id="step-3" class="section recap-content">
+                <h2>Summary</h2>
+            </div>
+
+            <div class="paging">
+                <button id="previous">&laquo; Previous</button>
+                <button id="next">Next &raquo;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+
+</html>

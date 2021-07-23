@@ -1,0 +1,26 @@
+.tabs {
+    @include grid(3, $space / 4);
+
+    button {
+        background-color: $white;
+        font-style: 1.4rem;
+        font-weight: $bold;
+        padding: 1rem;
+        text-align: center;
+        text-transform: uppercase;
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:focus {
+            background-color: $blue;
+        }
+
+        &.current {
+            background-color: $blue;
+            color: $white;
+        }
+    }
+}

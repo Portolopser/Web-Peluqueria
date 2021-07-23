@@ -1,0 +1,37 @@
+body {
+    background-color: #1a1b15
+}
+
+.contenedor-estetica {
+    @include tablet {
+        //vh = Viewport Height (tamaño de la pantalla)
+        height: 100vh;
+        //Mixin de grid en mixins.scss
+        @include grid(2, $space / 2);
+    }
+   
+    .imagen {
+        height: 30rem;
+        background-image: url(../img/1.jpg);
+        background-size: cover;
+        background-position: center center;
+        @include tablet {
+            height: auto;
+        }
+    }
+}
+
+.app {
+    width: 95%;
+    margin: 0 auto;
+    padding: $space / 2;
+
+    .section {
+        display: none;
+        margin-top: $space / 2;
+    }
+}
+
+.show-section {
+    display: block !important;
+}
